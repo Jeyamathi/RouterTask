@@ -1,12 +1,53 @@
-# React + Vite
+🛒 React Shopping Cart with Routing
+This is a simple React-based shopping cart application that demonstrates:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Product listing
 
-Currently, two official plugins are available:
+Dynamic product details page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add to Cart functionality
 
-## Expanding the ESLint configuration
+Routing with react-router-dom
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A floating navigation button that adapts based on the current route
+
+📁 Project Structure
+css
+Copy
+Edit
+src/
+├── components/
+│   ├── FloatingNavButton.jsx
+│   ├── ProductCard.jsx
+│   └── ProductList.jsx
+├── pages/
+│   ├── Cart.jsx
+│   └── ItemDetails.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+🚦 Routing Setup
+We use react-router-dom for navigation. Routes include:
+
+Route	Description
+/	Product listing (home)
+/item/:id	Item details page
+/cart	Shopping cart page
+
+📦 Features
+Product cards with image and title clickable
+
+Dynamic routing using :id param
+
+Cart navigation with floating button
+
+Fully responsive with Tailwind CSS
+
+🧰 Tech Stack
+React
+
+React Router DOM
+
+Tailwind CSS
+
+Vite (for fast development)
